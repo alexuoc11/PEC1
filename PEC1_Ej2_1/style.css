@@ -1,0 +1,109 @@
+:root {
+    --white: rgba(255,255,255,0.5);
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 400px;
+    padding-bottom: 350px;
+    padding-top: 40px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0 20 20px;
+    color: black;
+    opacity: 0.7;
+}
+
+.form{
+    height: 320px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    background: transparent;
+    width: 200px;
+    padding: 1em;
+    margin-top: 10px;
+    border-left: 1px solid var(--white);
+    border-top: 1px solid var(--white);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+input:hover {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+}
+
+.form button{
+    background: transparent;
+    width: 100px;
+    padding: 1em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
