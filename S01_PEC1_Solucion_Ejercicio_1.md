@@ -50,16 +50,47 @@
 
     1. Cita al menos 2 de estos preprocesadores.
    
+        SASS y Less
+
     2. Cita al menos 4 ventajas que ofrecen estos preprocesadores.
    
+        Códigos más organizados: Con la mejora de la funcion @import, es posible tener todo el codigo maás organizado y en diferentes ficheros.
+
+        Reutilización de código: El hecho de tener todo tu codigo separado en ficheros hace que sea mucho más sencillo importar una parte y reutilizarla sin ningun tipo de problema.
+
+        Más fácil de mantener: Al tenerlo todo mucho mejor organizado, mantener el codigo se hace una tarea mucho más sencilla ya que sabremos donde esta cada parte y cada función.
+
+        Variables: Permite almacener unas variables para después si queremos utilizarlo.
+
     3. Explica brevemente en qué consisten los sourcemaps.
+
+        Para cada uno de los ficheros CSS, los preprocesadores generan un fichero .map, el cual es un JSON que define un mapa entre cada declaración de CSS y su respectiva linea en el fichero del preprocesador.
    
     4. Explica qué es un transpilador.
+
+        Es un compilador que es capaz de traducir de un lenguaje a otro que sea similar o que tenga un nivel de abstracción parecido.
 
 **El flujo de trabajo profesional en front-end hace indispensable el uso de herramientas como controles de versiones y herramientas de gestión de módulos (0.75 puntos).**
 
     1. Cita al menos dos sistemas de control de versiones y dos herramientas de gestión de módulos.
 
+        Control de versiones: Github y SVN.
+        Gestión de modulos: Control de inventario y Reposicion de inventario.
+
     2. Cita y explica al menos 3 comandos de Git.
 
+        git status: Nos muestra el estado de nuestro repositorio, cuales estan guardados en git y cuales aun no estan sincronizadas con el repositorio.
+
+        git push: Subir una nueva version de repositorio.
+
+        git pull: Descargarnos la ultimo version de un repositorio en local,
+
     3. Cita y explica brevemente las características más definitorias de WebPack.
+
+        Webpack se ejecuta en Node.js, un tiempo de ejecución de JavaScript que se puede usar en ordenadores y servidores fuera de un entorno de navegador. Las principales caracteristicas son:
+        
+        Podremos manejar los archivos que utilizamos para el desarrollo de una web o aplicación.
+        Para Webpack cada uno de los archivos es como un módulo.
+        Por medio de los loaders podremos manipular cualquier tipo de fichero, no solo Javascript.
+        Permite separar el código de la aplicación para que la página no cargue elementos que no sean necesarios sino hasta que se necesiten.
+ 
