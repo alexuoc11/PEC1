@@ -4,19 +4,47 @@
 
     1. ¿Cuál es la ventaja del uso de etiquetas semánticas? Nombra y explica al menos 3 de estas ventajas.
    
-        Respuesta pregunta 1
+        Podemos encontrar muchas ventajas, pero creo que algunas pueden ser practicidad, complicidad con el estilo y ademas poder especificar al buscador ciertas caracteristicas.
+
+        Practicidad: Nuestro codigo queda mucho más organizado y sobretodo es mucho más entendible para que un desarrollador externo ya que sera capaz de identificar cada parte mucho mas rápido. 
+
+        Complicidad con el estilo: Utilzar etiquetas semánticas nos permite poder editar el estilo de una manera mucho más sencilla ya que si por ejemplo queremos editar el estilo de todos los párrafos, en el css solo tendremos que editar el estilo de la etiqueta <p>.
+
+        Caracteristicas para el buscador: Otra ventaja es que podremos especificarle al buscador el formato de cualquier texto, imagen, etc... De tal manera si queremos especificarle por ejemplo que una frase tiene que destacar por encima de toda la pagina y tener el texto más grande, solamente tendremos que poner la etiqueta <h1>.
 
     2. **Cita al menos 3 APIs HTML5 y explica brevemente su funcionalidad.**
    
-        Respuesta pregunta 2
+        YouTube Player API: Esta API nos permite insertar un reproductor de YouTube y manejarlo mediante Javascript. Este reproductor se inserta mediante el TAG de <iframe>.
+
+        ExchangeRate-API: Esta nos permite, a partir de especificar una moneda, ver cual es la diferencia con otra moneda. Por ejemplo si le pedimos a la API la moneda 'EUR' nos devolverá el equivalente en otra moneda (ej: 1,12 USD).
+
+        Twitter API: Mediante este API podemos conseguir información de Twitter, como pueden ser Tweets o Ads. Existen una variedad de opciones de acceso; Estandar, Elevated, Elevated+ y Academic Research.
 
     3. Cita qué opción ofrece CSS3 para conseguir que se apliquen diferentes estilos CSS sobre el mismo elemento en su visualización en diferentes dispositivos (diferentes tamaños de pantalla).
    
-        Respuesta pregunta 3
+        Nos facilita la opcion '@media screen', que por ejemplo, si tenemos una pantalla de tablet grande deberiamos poner:
+
+        ```
+        @media screen and (max-width: 991px) {
+            /* Aquí van los estilos para tablets grandes */
+        }
+        ```
 
     4. Cita al menos 4 de las características principales de TypeScript (importante superset de JavaScript que trataremos en el siguiente capítulo).
    
-        Respuesta pregunta 4
+        Decorators: Son funciones que nos permiten decorar mediante una expresion y unos argumentos.
+
+        Programación orientada a objetos: Nos permite crear y manejar clases, heredar,... Y eso lo convierte en un lenguaje sólido.
+
+        Reciente: Es un lenjuage reciente que nos permite que nos ofrece herramientas muy útiles como por ejemplo que una variable tenga dos tipos diferentes. Por ejemplo:
+        ```
+        let i : string | number
+        ```
+
+        Flexibilidad: Siguiendo con el ejemplo anterior, Typescript nos permite definir una variable con un tipo y a la vez si queremos decirle que el tipo de la variable es 'any'. Como este ejemplo hay muchos y por lo tanto podemos decir que es un lenguaje flexible.
+        
+
+
 
 **El lenguaje CSS es muy rígido, poco práctico y ordenado a la hora de programar. Para evitar este problema se han creado los preprocesadores CSS, que ofrecen evidentes ventajas (0.5 puntos)**
 
