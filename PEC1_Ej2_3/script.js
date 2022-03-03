@@ -13,7 +13,7 @@ let rate = 1;
 populateUI();
 
 let ticketPrice = +movieSelect.value; 
-let moneda1 = moneda.value;
+let moneda1 = 'EUR';
 
 // Cambiar la cantidad de asientos seleccionados y el precio total
 function updateTotals(){
@@ -49,11 +49,9 @@ function populateUI(){
 
     if(monedaSelectedLocal !== null){
         moneda.value = monedaSelectedLocal;
-    }
-
-    if(rateLocal !== null){
         rate = +rateLocal;
     }
+
 
     if(movieSelectedIndex!== null){
         movieSelect.selectedIndex = movieSelectedIndex;
@@ -84,12 +82,13 @@ moneda.addEventListener('change', (e) => {
 
     const monedaLocal = e.target.selectedIndex;
 
-    moneda2 = e.target.value;
+    let moneda2 = e.target.value;
 
-    fetch(`https://open.exchangerate-api.com/v6/latest/${moneda2}`)
+    fetch(`https://open.exchangerate-api.com/v6/latest/${moneda1}`)
     .then(res => res.json())
     .then(data => {
-        rate = data.rates[moneda1];
+        console.log(data.rates);
+        rate = data.rates[moneda2];
         nuevaMoneda.innerText = rate + moneda2;
         monedaSmall.style.display = 'inline';
         localStorage.setItem('monedaSelected', JSON.stringify(moneda2));
